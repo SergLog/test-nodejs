@@ -60,7 +60,7 @@ function getJson(){
         });
   }
 
-  setInterval(() => getJson(), 5100);
+  setInterval(() => getJson(), 2100);
 
 //   getJson()
 

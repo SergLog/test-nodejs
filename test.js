@@ -63,8 +63,8 @@ function getJson(){
         });
   }
 
-  setInterval(() => getJson(), 5100);
+ // setInterval(() => getJson(), 5100);
 
   // getJson()
 
-   //delUserData();
+   delUserData();

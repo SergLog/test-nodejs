@@ -41,27 +41,30 @@ function writeUserData(obj) {
        }
 
 
-    //    function delUserData() {
-    //     firebase.database().ref('users/').set({});
-    //   }
+       function delUserData() {
+        firebase.database().ref('users/').set({});
+      }
 
 function getJson(){
     axios
         .get(
-            `https://opensky-network.org/api/states/all?lamin=55.900&lomin=36.440&lamax=56.020&lomax=37.550`
+            `https://opensky-network.org/api/states/all?lamin=55.995&lomin=37.440&lamax=56.015&lomax=37.550`
         )
         .then(response => {
-            writeUserData(response.data);
+            response.data.states.forEach((item, index, array) => {
+                writeUserData(item);
+              });
+            //writeUserData(response.data.states);
             //writeUserData('a', '1', 'zzzzzzz');
-            //console.warn(response.data);                             
+            //console.warn(response.data.states);                             
         })
         .catch(e => {
           console.warn(e);
         });
   }
 
-  setInterval(() => getJson(), 2100);
+  setInterval(() => getJson(), 5100);
 
-//   getJson()
+  // getJson()
 
-//   delUserData();
+   //delUserData();

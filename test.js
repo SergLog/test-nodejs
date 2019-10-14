@@ -1,70 +1,66 @@
-// const http = require("http");
- 
-// http.createServer(function(request, response){
-     
-//     response.setHeader("UserId", 12);
-//     response.setHeader("Content-Type", "text/html; charset=utf-8;");
-//     response.write("<h2>Привет, Андрей!</h2>");
-//     response.write("<img src=" + "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6yDwN9MsSX7_ZJvb4sopKU_QfZRzvsd9-dGgaGZZcNKkV6R48Jg" +"></img>");
-//     response.end();
-// }).listen(process.env.PORT || 3000);
-
-
-/*eslint no-console: ["error", { allow: ["warn", "error"] }] */
-
-
 let axios = require('axios');
-let firebase = require('firebase');
+let db = require('./firebase.js');
+let email = require('./email.js');
 
-let config = {
-    apiKey: "AIzaSyCkP_ANgC8UAUFTsxrWH-_pfOOwR4XLGOk",
-    authDomain: "testdb-bf7b5.firebaseapp.com",
-    projectId: "testdb-bf7b5",
-    databaseURL: "https://testdb-bf7b5.firebaseio.com",
-};
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-    console.warn("firebase");
+function getCurDate() {
+    let date = new Date();
+    let dateFormatter = new Intl.DateTimeFormat("ru");
+    let curDate = dateFormatter.format(date);
+    return curDate;
 }
-this.database = firebase.database();
 
-// function writeUserData(name, email, imageUrl) {
-//     firebase.database().ref('users/').push({
-//       username: name,
-//       email: email,
-//       profile_picture : imageUrl
-//     });
-//   }
+let set = new Set();
 
-function writeUserData(obj) {
-         firebase.database().ref('users/').push(obj);
-       }
+// function addFlight(obj) {
+//     db.ref(getCurDate()).push(obj);
+// }
+
+function addFlight(obj) {
+    db.ref('2019-10-15').push(obj);
+}
 
 
-       function delUserData() {
-        firebase.database().ref('users/').set({});
-      }
+function delAll() {
+    db.ref('2019-10-15').set({});
+}
 
-function getJson(){
+// let date = new Date(1570708445 * 1000);
+// let year = date.getFullYear();
+// let month = date.getMonth();
+// let day = date.getDate();
+
+// let formattedTime = day + '.' + month + '.' + year;
+
+let t1 = new Date(1570708347 * 1000).toUTCString();
+let t2 = new Date().toUTCString();
+
+
+function getJson() {
     axios
         .get(
-            `https://opensky-network.org/api/states/all?lamin=55.995&lomin=37.440&lamax=56.015&lomax=37.550`
+            `https://SergLog:CellarDOOR@opensky-network.org/api/states/all?lamin=55.995&lomin=37.440&lamax=56.015&lomax=37.550`
         )
         .then(response => {
-            response.data.states.forEach((item, index, array) => {
-                writeUserData(item);
-              });
-            //writeUserData(response.data.states);
-            //writeUserData('a', '1', 'zzzzzzz');
-            //console.warn(response.data.states);                             
+            if (response.data.states !== null) {
+
+                //console.log(response.data.states);
+
+                response.data.states.forEach((item, index, array) => {
+                    addFlight(item);
+                    //console.log(item[0] + ' ' + item[1]);
+                });
+            }
+
         })
         .catch(e => {
-          console.warn(e);
+            //console.warn(e);            
+            console.warn('1');            
+            //email('get JSON from API error. Error Text: ' + e)
         });
-  }
+}
 
- // setInterval(() => getJson(), 5100);
+setInterval(() => getJson(), 11000);
 
-  // getJson()
+// getJson()
 
-   delUserData();
+//delAll();

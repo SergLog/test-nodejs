@@ -49,4 +49,8 @@ function getDataFromAPI() {
 }
 
 //delAll();
-setInterval(() => getDataFromAPI(), 11000);
+//setInterval(() => getDataFromAPI(), 11000);
+
+console.log(dates.getDate());
+
+

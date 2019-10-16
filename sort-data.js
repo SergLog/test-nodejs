@@ -4,19 +4,29 @@ let dates = require('./dates.js');
 let fs = require('fs');
 let paths = require('./paths.js');
 
-let flightsObj = db.ref(paths.getPath(new Date()));
+let date = '2019/10/16-10-2019';
+let date_sort = '2019-sort/10-sort/16-10-2019-sort';
+
+//let flightsObj = db.ref(paths.getPath(dates.getDate()));
+let flightsObj = db.ref(date);
+
+// console.log(paths.getPath(dates.getDate()));
+// console.log(paths.getPathSort(dates.getDate()));
+// console.log(dates.getTime());
 
 let ICAO;
 let setOfICAO = new Set(); //set 
 let fligtsArrUnique = {};
 
 function delAll() {
-    db.ref(paths.getPathSort(new Date())).set({});
+    //db.ref(paths.getPathSort(dates.getDate())).set({});
+    db.ref(date_sort).set({});
 }
 
 function addObjOfDay(obj) {
     try {
-        db.ref(paths.getPathSort(new Date())).push(obj);
+        db.ref(date_sort).push(obj);
+        //db.ref(paths.getPathSort(dates.getDate())).push(obj);
     } catch (e) {
         fs.appendFileSync('log.txt', moment().format() + '  addFlight() function in sort-data.js. ' + e + '\n');
     }
@@ -47,7 +57,7 @@ flightsObj.once('value').then(function (Snapshot) {
 
 
 
-// let flightsObjSort = db.ref(paths.getPathSort(new Date()));
+// let flightsObjSort = db.ref(paths.getPathSort(dates.getDate()));
 
 // //get Array of unique objects
 // flightsObjSort.once('value').then(function (Snapshot) {

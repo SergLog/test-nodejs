@@ -2,26 +2,27 @@ let db = require('./firebase-init.js');
 let moment = require('moment');
 let dates = require('./dates.js');
 let fs = require('fs');
+let paths = require('./paths.js');
 
-let userRef = db.ref(dates.getCurDate());
+let flightsObj = db.ref(paths.getPath(new Date()));
 
 let ICAO;
 let setOfICAO = new Set(); //set 
 let fligtsArrUnique = {};
 
 function delAll() {
-    db.ref(dates.getCurDateSorted()).set({});
+    db.ref(paths.getPathSort(new Date())).set({});
 }
 
 function addObjOfDay(obj) {
     try {
-        db.ref(dates.getCurDateSorted()).push(obj);
+        db.ref(paths.getPathSort(new Date())).push(obj);
     } catch (e) {
         fs.appendFileSync('log.txt', moment().format() + '  addFlight() function in sort-data.js. ' + e + '\n');
     }
 }
 
-userRef.once('value').then(function (Snapshot) {
+flightsObj.once('value').then(function (Snapshot) {
     const res = Snapshot.val();
     for (let prop in res) {
 
@@ -38,26 +39,22 @@ userRef.once('value').then(function (Snapshot) {
             }
         }
     })
-    
-    //delAll();
-    //addObjOfDay(fligtsArrUnique);
-    //console.log(fligtsArrUnique);
+
+   delAll();
+   addObjOfDay(fligtsArrUnique);
 })
 
 
-//delAll();
-//console.log((dates.getCurDateSorted));
 
 
-let userRefSort = db.ref(dates.getCurDateSorted);
+// let flightsObjSort = db.ref(paths.getPathSort(new Date()));
 
-//get Array of unique objects
-userRefSort.once('value').then(function (Snapshot) {
-    const res = Snapshot.val();
-    let firstKey = Object.keys(res)[0];
-    let resArr = Object.values(res[firstKey]);
+// //get Array of unique objects
+// flightsObjSort.once('value').then(function (Snapshot) {
+//     const res = Snapshot.val();
+//     let firstKey = Object.keys(res)[0];
+//     let resArr = Object.values(res[firstKey]);
 
-    
-    console.log(Object.values(res[firstKey]));
+//     console.log(resArr);
 
-})
+// })

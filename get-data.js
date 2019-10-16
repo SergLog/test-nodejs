@@ -35,7 +35,7 @@ function getDataFromAPI() {
                         'date' : dates.getDate(last_contact),
                         'time': dates.getTime(last_contact),
                         'year' : dates.getYear(last_contact),
-                        'month': dates.getMonth(unlast_contactixTime),
+                        'month': dates.getMonth(last_contact),
                         'day' : dates.getDay(last_contact),
                         'geo_altitude': item[13],
                         'velocity': item[9] * 18 / 5
@@ -48,5 +48,5 @@ function getDataFromAPI() {
         });
 }
 
-delAll();
+//delAll();
 setInterval(() => getDataFromAPI(), 11000);

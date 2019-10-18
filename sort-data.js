@@ -4,8 +4,8 @@ let dates = require('./dates.js');
 let fs = require('fs');
 let paths = require('./paths.js');
 
-let date = '2019/10/16-10-2019';
-let date_sort = '2019-sort/10-sort/16-10-2019-sort';
+let date = '2019/10/17-10-2019';
+let date_sort = '2019-sort/10-sort/17-10-2019-sort';
 
 //let flightsObj = db.ref(paths.getPath(dates.getDate()));
 let flightsObj = db.ref(date);
@@ -50,8 +50,8 @@ flightsObj.once('value').then(function (Snapshot) {
         }
     })
 
-   delAll();
-   addObjOfDay(fligtsArrUnique);
+    //delAll();
+    addObjOfDay(fligtsArrUnique);
 })
 
 

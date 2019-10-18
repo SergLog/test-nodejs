@@ -31,7 +31,11 @@ function getDataFromAPI() {
                     addFlight({
                         
                         'icao24': item[0],
+                        'callsign': item[1],
                         'last_contact': item[4],
+                        'vertical_rate' : item[5],
+                        'latitude' : item[6],
+                        'vertical_rate' : item[11],
                         'date' : dates.getDate(last_contact),
                         'time': dates.getTime(last_contact),
                         'year' : dates.getYear(last_contact),
@@ -48,9 +52,9 @@ function getDataFromAPI() {
         });
 }
 
-//delAll();
-//setInterval(() => getDataFromAPI(), 11000);
+delAll();
+setInterval(() => getDataFromAPI(), 11000);
 
-console.log(dates.getDate());
+//console.log(dates.getDate());
 
 

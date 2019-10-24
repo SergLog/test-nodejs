@@ -17,6 +17,28 @@ function delAll() {
     db.ref().set({});
 }
 
+async function isInDbCheck(callsign) {
+
+    let flightsData = db.ref(paths.getPath(new Date()));
+
+    let check = await flightsData.once('value').then(function (Snapshot) {
+
+        const res = Snapshot.val();
+
+        if (res == null) {
+            return false;
+        }
+
+        for (let prop in res) {
+            if (res[prop].callsign == callsign) {
+                return true;
+            }
+        }
+    })
+
+    return check || false;
+}
+
 let last_contact; // Unix timestamp (seconds) for the last update of the transponder
 
 function getDataFromAPI() {
@@ -25,25 +47,33 @@ function getDataFromAPI() {
             `https://opensky-network.org/api/states/all?lamin=55.995&lomin=37.440&lamax=56.015&lomax=37.550`
         )
         .then(response => {
+
             if (response.data.states !== null) {
                 response.data.states.forEach((item, index, array) => {
-                    last_contact = new Date(item[4] * 1000);
-                    addFlight({
-                        
-                        'icao24': item[0],
-                        'callsign': item[1],
-                        'last_contact': item[4],
-                        'vertical_rate' : item[5],
-                        'latitude' : item[6],
-                        'vertical_rate' : item[11],
-                        'date' : dates.getDate(last_contact),
-                        'time': dates.getTime(last_contact),
-                        'year' : dates.getYear(last_contact),
-                        'month': dates.getMonth(last_contact),
-                        'day' : dates.getDay(last_contact),
-                        'geo_altitude': item[13],
-                        'velocity': item[9] * 18 / 5
-                    });
+
+                    last_contact = (item[4] + 3 * 60 * 60) * 1000; // ms => sec, 3 * 60 * 60 - 3 hours to get Moscow time from utc
+
+                    if (item[13] < 1500) { //geo_altitude < 1500 meters
+
+                        isInDbCheck(item[1].trim()).then(res => { //isInDbCheck - check if the flight is in the database (within the day)
+                            if (res == false)
+                                addFlight({
+                                    'icao24': item[0],
+                                    'callsign': item[1].trim(),
+                                    'last_contact': last_contact/1000, //unixtime + 3 hours to get Moscow time
+                                    'vertical_rate': item[5],
+                                    'latitude': item[6],
+                                    'vertical_rate': item[11],
+                                    'date': dates.getDate(last_contact),
+                                    'time': dates.getTime(last_contact),
+                                    'year': dates.getYear(last_contact),
+                                    'month': dates.getMonth(last_contact),
+                                    'day': dates.getDay(last_contact),
+                                    'geo_altitude': item[13],
+                                    'velocity': item[9] * 18 / 5
+                                })
+                        });
+                    }
                 });
             }
         })
@@ -57,4 +87,4 @@ setInterval(() => getDataFromAPI(), 11000);
 
 //console.log(dates.getDate());
 
-
+//условия 1 - снижение 2 - высота 3 - область фикисрования

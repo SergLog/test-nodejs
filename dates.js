@@ -4,28 +4,33 @@ moment.locale('nl'); // Google Firebase doesn`t accept date like '18.10.2019'. I
 
 const datesSet = {
 
-    subtract2Hours: function (date) { // 2 hours - to get Moscow time (from Surgut)
-        return moment(date).subtract(2, 'hours');
-    },
     getTime: function (date) {
-        return (this.subtract2Hours(moment(date))).format('LTS');
+        return (moment.utc(date)).format('LTS');
     },
     getDate: function (date) {
-        return (this.subtract2Hours(moment(date))).format('L');
+        return (moment.utc(date)).format('L');
     },
     getDay: function (date) {
-        return (this.subtract2Hours(moment(date))).format('D');
+        return (moment.utc(date)).format('D');
     },
     getMonth: function (date) {
-        return (this.subtract2Hours(moment(date))).format('M');
+        return (moment.utc(date)).format('M');
     },
     getYear: function (date) {
-        return (this.subtract2Hours(moment(date))).format('YYYY');
-    },
-    getDateSorted: function (date) {
-        return (this.subtract2Hours(moment(date))).format('L') + '-sort';
+        return (moment.utc(date)).format('YYYY');
     }
 
 }
 
 module.exports = datesSet;
+
+// console.log(datesSet.getDate(1571829517*1000));
+// console.log(datesSet.getTime(1571829517*1000));
+
+// console.log(datesSet.getDate(1571829517*1000));
+// console.log(datesSet.getTime(1571829517*1000));
+
+
+//console.log(datesSet.getTime(1571842881*1000));
+
+//console.log(moment(1571842881*1000).format());

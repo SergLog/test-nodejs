@@ -1,58 +1,35 @@
 let db = require('./firebase-init.js');
-let moment = require('moment');
 let dates = require('./dates.js');
-let fs = require('fs');
-let paths = require('./paths.js');
 
-let date = '2019/10/17-10-2019';
-let date_sort = '2019-sort/10-sort/17-10-2019-sort';
 
-//let flightsObj = db.ref(paths.getPath(dates.getDate()));
+let date = '2019/10/23-10-2019';
+
+
 let flightsObj = db.ref(date);
 
-// console.log(paths.getPath(dates.getDate()));
-// console.log(paths.getPathSort(dates.getDate()));
-// console.log(dates.getTime());
-
-let ICAO;
-let setOfICAO = new Set(); //set 
-let fligtsArrUnique = {};
-
-function delAll() {
-    //db.ref(paths.getPathSort(dates.getDate())).set({});
-    db.ref(date_sort).set({});
-}
-
-function addObjOfDay(obj) {
-    try {
-        db.ref(date_sort).push(obj);
-        //db.ref(paths.getPathSort(dates.getDate())).push(obj);
-    } catch (e) {
-        fs.appendFileSync('log.txt', moment().format() + '  addFlight() function in sort-data.js. ' + e + '\n');
-    }
-}
 
 flightsObj.once('value').then(function (Snapshot) {
+
     const res = Snapshot.val();
-    for (let prop in res) {
 
-        ICAO = res[prop].icao24;
-        setOfICAO.add(ICAO);
-    }
+    //console.log(Object.values(res).reduce((acc, c) => acc + c.velocity, 0) / Object.values(res).length);
+    //console.log(Object.values(res).reduce((acc, c) => acc + c.geo_altitude, 0) / Object.values(res).length);
 
-    setOfICAO.forEach(item => {
-        for (let prop in res) {
-            ICAO = res[prop].icao24;
-            if (ICAO == item) {
-                fligtsArrUnique[prop] = res[prop];
-                return;
-            }
-        }
+    let timeMin = "2019-10-23 15:52:00";
+    let timeMax = "2019-10-23 16:52:59";
+
+    sortedArr = Object.values(res).filter(item => {
+        return ((item.last_contact > convertTimeToUnixTtme(timeMin)) && (item.last_contact < convertTimeToUnixTtme(timeMax)))
     })
 
-    //delAll();
-    addObjOfDay(fligtsArrUnique);
+    console.log(sortedArr.length);
+
 })
+
+function convertTimeToUnixTtme(datetme) {
+    return Math.round(new Date(datetme).getTime() / 1000.0) + 3 * 60 * 60;
+}
+
 
 
 

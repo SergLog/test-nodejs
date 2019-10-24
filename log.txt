@@ -1,0 +1,237 @@
+2019-10-23T15:40:28+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:40:39+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:40:50+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:01+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:12+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:23+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:34+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:45+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:41:56+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:42:07+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:42:18+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:42:29+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:42:40+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:42:51+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:02+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:13+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:24+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:35+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:46+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:43:57+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:44:08+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:44:19+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:44:30+03:00 getDataFromAPI() function. Error: connect ETIMEDOUT 194.209.200.2:443
+2019-10-23T15:44:32+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:44:43+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:44:54+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:45:05+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:45:16+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:45:27+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:45:38+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:45:49+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:00+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:11+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:22+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:33+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:44+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:46:55+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:47:06+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:47:17+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:47:28+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:47:39+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T15:47:50+03:00 getDataFromAPI() function. Error: getaddrinfo ENOTFOUND opensky-network.org opensky-network.org:443
+2019-10-23T16:34:45+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:37:14+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T16:37:58+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T16:38:03+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:41:32+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:41:49+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T16:43:22+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:43:55+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:44:28+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:45:01+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:45:57+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:47:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:48:30+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:50:15+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T16:53:00+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T16:53:38+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:55:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:56:12+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T16:58:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:00:47+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:02:32+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:04:49+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:06:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:07:23+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:08:51+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:09:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:10:30+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:10:52+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:11:14+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:11:47+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:12:42+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:13:26+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:14:16+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:14:54+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:16:11+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:16:22+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:16:55+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:17:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:17:50+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:18:23+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:19:18+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:19:40+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:19:51+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:20:35+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:20:46+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:21:19+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:21:41+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:22:04+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:22:14+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:22:58+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:23:09+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:23:31+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:23:42+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:23:53+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:24:04+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:24:15+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:24:37+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:24:59+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:25:10+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:25:43+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:26:05+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:26:16+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:26:38+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:26:49+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:27:00+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:27:11+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:27:44+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:28:06+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:28:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:28:39+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:29:01+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:29:12+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:29:45+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:29:56+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:30:07+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:30:18+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:30:40+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:31:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:31:30+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:31:35+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:31:46+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:31:57+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:32:08+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:32:41+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:03+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:15+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:20+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:33:25+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:36+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:47+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:33:58+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:34:09+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:34:31+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:34:42+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:35:04+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:35:15+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:35:26+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:35:48+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:35:59+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:36:10+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:36:21+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:36:43+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:36:47+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:36:54+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:37:05+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:37:16+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:37:27+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:37:38+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:37:49+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:38:11+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:38:22+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:38:33+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:38:55+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:38:59+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:39:06+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:39:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:39:28+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:39:39+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:39:53+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:40:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:40:12+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:40:23+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:40:34+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:40:56+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:41:00+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:41:02+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:41:07+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:41:11+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:41:19+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:41:51+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:00+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:13+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:24+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:35+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:46+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:42:57+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:43:09+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:43:19+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:43:30+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:43:41+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:43:52+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:44:03+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:44:14+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:44:25+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:44:36+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:02+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:09+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:20+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:29+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:31+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:45:54+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:04+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:13+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:15+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:26+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:37+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:48+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:46:59+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:47:10+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:47:11+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:47:21+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:47:32+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:47:43+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:47:57+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:48:05+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:48:16+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:48:27+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:48:38+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:48:50+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:49:00+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:49:22+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:49:33+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:49:44+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:49:56+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:50:13+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:50:17+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:50:28+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:50:39+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:50:50+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:51:01+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:51:12+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:51:45+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:51:56+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:52:07+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:52:18+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:52:40+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:52:51+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:53:13+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:53:24+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:53:35+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:53:57+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:54:19+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:56:03+03:00 getDataFromAPI() function. Error: Request failed with status code 502
+2019-10-23T17:57:26+03:00 getDataFromAPI() function. Error: Request failed with status code 504
+2019-10-23T17:58:00+03:00 getDataFromAPI() function. Error: Request failed with status code 504

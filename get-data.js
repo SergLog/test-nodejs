@@ -5,9 +5,10 @@ let fs = require('fs');
 let dates = require('./dates.js');
 let paths = require('./paths.js');
 
-function addFlight(obj) {
+function addFlight(obj, date) {
     try {
-        db.ref(paths.getPath(new Date())).push(obj);
+        //db.ref(paths.getPath(new Date())).push(obj);
+        db.ref(paths.getPath(date)).push(obj);
     } catch (e) {
         fs.appendFileSync('log.txt', moment().format() + '  addFlight() function in get-data.js. ' + e + '\n');
     }
@@ -17,9 +18,10 @@ function delAll() {
     db.ref().set({});
 }
 
-async function isInDbCheck(callsign) {
+async function isInDbCheck(callsign, date) {
 
-    let flightsData = db.ref(paths.getPath(new Date()));
+    //let flightsData = db.ref(paths.getPath(new Date()));
+    let flightsData = db.ref(paths.getPath(date));
 
     let check = await flightsData.once('value').then(function (Snapshot) {
 
@@ -44,7 +46,7 @@ let last_contact; // Unix timestamp (seconds) for the last update of the transpo
 function getDataFromAPI() {
     axios
         .get(
-            `https://opensky-network.org/api/states/all?lamin=55.995&lomin=37.440&lamax=56.015&lomax=37.550`
+            `https://opensky-network.org/api/states/all?lamin=55.995&lomin=37.460&lamax=56.015&lomax=37.510`
         )
         .then(response => {
 
@@ -55,7 +57,7 @@ function getDataFromAPI() {
 
                     if (item[13] < 1500) { //geo_altitude < 1500 meters
 
-                        isInDbCheck(item[1].trim()).then(res => { //isInDbCheck - check if the flight is in the database (within the day)
+                        isInDbCheck(item[1].trim(), last_contact).then(res => { //isInDbCheck - check if the flight is in the database (within the day)
                             if (res == false)
                                 addFlight({
                                     'icao24': item[0],
@@ -71,7 +73,7 @@ function getDataFromAPI() {
                                     'day': dates.getDay(last_contact),
                                     'geo_altitude': item[13],
                                     'velocity': item[9] * 18 / 5
-                                })
+                                },last_contact)
                         });
                     }
                 });

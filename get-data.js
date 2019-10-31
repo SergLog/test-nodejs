@@ -20,7 +20,8 @@ function delAll() {
 
 async function isInDbCheck(callsign, date) {
 
-    //let flightsData = db.ref(paths.getPath(new Date()));
+    // let flightsData = db.ref(paths.getPath(new Date()));
+    //let flightsData = db.ref('2019/10/28-10-2019');
     let flightsData = db.ref(paths.getPath(date));
 
     let check = await flightsData.once('value').then(function (Snapshot) {
@@ -39,6 +40,7 @@ async function isInDbCheck(callsign, date) {
     })
 
     return check || false;
+
 }
 
 let last_contact; // Unix timestamp (seconds) for the last update of the transponder
@@ -62,7 +64,7 @@ function getDataFromAPI() {
                                 addFlight({
                                     'icao24': item[0],
                                     'callsign': item[1].trim(),
-                                    'last_contact': last_contact/1000, //unixtime + 3 hours to get Moscow time
+                                    'last_contact': last_contact / 1000, //unixtime + 3 hours to get Moscow time
                                     'vertical_rate': item[5],
                                     'latitude': item[6],
                                     'vertical_rate': item[11],
@@ -72,8 +74,9 @@ function getDataFromAPI() {
                                     'month': dates.getMonth(last_contact),
                                     'day': dates.getDay(last_contact),
                                     'geo_altitude': item[13],
-                                    'velocity': item[9] * 18 / 5
-                                },last_contact)
+                                    'velocity': item[9] * 18 / 5,
+                                    'timeAdd' : paths.getPath(last_contact)
+                                }, last_contact)
                         });
                     }
                 });
@@ -84,9 +87,9 @@ function getDataFromAPI() {
         });
 }
 
-delAll();
+// delAll();
 setInterval(() => getDataFromAPI(), 11000);
 
 //console.log(dates.getDate());
 
-//условия 1 - снижение 2 - высота 3 - область фикисрования
+//var obj = Object.assign(o1, o2, o3);

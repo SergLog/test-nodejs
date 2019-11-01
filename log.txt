@@ -19,3 +19,4 @@
 2019-10-31T12:14:48+03:00 getDataFromAPI() function. Error: Request failed with status code 500
 2019-10-31T12:15:21+03:00 getDataFromAPI() function. Error: Request failed with status code 500
 2019-10-31T12:15:34+03:00 getDataFromAPI() function. Error: Request failed with status code 500
+2019-10-31T17:06:48+03:00 getDataFromAPI() function. Error: Request failed with status code 502
